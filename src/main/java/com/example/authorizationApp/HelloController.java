@@ -1,12 +1,13 @@
 package com.example.authorizationApp;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
     @GetMapping("/")
-    String hello() {
-        return "hello biznatch";
+    String getSession(HttpServletRequest request) {
+        return "SessionID: " + request.getSession().getId();
     }
 }
