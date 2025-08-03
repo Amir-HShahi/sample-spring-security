@@ -1,4 +1,4 @@
-package com.example.authorizationApp;
+package com.example.authorizationApp.model;
 
 public class Student {
     private String name;

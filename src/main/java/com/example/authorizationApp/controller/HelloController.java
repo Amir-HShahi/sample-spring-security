@@ -1,4 +1,4 @@
-package com.example.authorizationApp;
+package com.example.authorizationApp.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
