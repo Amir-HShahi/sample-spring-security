@@ -19,6 +19,6 @@ public class UsersController {
 
     @PostMapping("/login")
     public String loginUser(@RequestBody Users user) {
-        return "TODO";
+        return usersService.verify(user);
     }
 }
